@@ -1,1 +1,5 @@
-console.log("how's it going?");
+console.log("where now?");
+
+if (module.hot) {
+    module.hot.accept();
+}
