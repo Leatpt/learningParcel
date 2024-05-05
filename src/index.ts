@@ -1,5 +1,8 @@
 import "./styles/index.scss";
-console.log("where now?");
+import styles from "./styles/styles.modules.css";
+
+const h2 = document.querySelector("h2")
+h2.classList.add(styles.heading);
 
 const obj = {
     a: "apple crisp",
