@@ -6,11 +6,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 const Home = () => import('../views/Home.vue');
 const About = () => import('../views/About.vue');
 const Contact = () => import('../views/Contact.vue');
+const NotFound = () => import('../views/NotFound.vue');
 
 const routes = [
-    { path: "/", component: Home},
-    { path: "/about", component: About},
-    { path: "/contact", component: Contact}
+    { path: "/", name: 'Home', component: Home},
+    { path: "/about", name: 'About', component: About},
+    { path: "/contact", name: 'Contact', component: Contact},
+    { path: "/:pathMatch(.*)*", name: 'NotFound', component: NotFound}
 ];
 
 const router = createRouter ({

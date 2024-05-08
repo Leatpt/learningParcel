@@ -1,10 +1,10 @@
 <script setup>
-import { useRouter } from "vue-router";
-
-const router = useRouter();
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <h1>Hello!</h1>
-  <RouterView />
+  <div>
+    <Navbar />
+    <RouterView />
+  </div>
 </template>
